@@ -28,7 +28,7 @@ const StepForm: React.FC = () => {
         {currentStep > 1 && (
           <button
             onClick={previousStep}
-            className="bg-secondary hover:bg-secondary-foreground text-gray-800 px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-md"
+            className="select-none bg-secondary hover:bg-secondary-foreground hover:text-white text-gray-800 px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-md"
           >
             Previous
           </button>
@@ -36,7 +36,7 @@ const StepForm: React.FC = () => {
         {currentStep < totalSteps && (
           <button
             onClick={nextStep}
-            className="bg-primary hover:bg-primary-foreground text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-md"
+            className="select-none bg-primary hover:bg-primary-foreground hover:text-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-md"
           >
             Next
           </button>
